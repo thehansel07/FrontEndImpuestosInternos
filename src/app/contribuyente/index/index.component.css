@@ -1,0 +1,29 @@
+.boton{
+  background-color: #16b5ff;
+  color: #000000;
+  padding: 1rem 3rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  width: 80%;
+  text-align: center;
+  border: none;
+}
+
+.boton:hover{
+  cursor: pointer;
+
+
+}
+
+@media (min-width: 768px) {
+  .boton{
+      width: auto;
+
+
+  }
+
+}

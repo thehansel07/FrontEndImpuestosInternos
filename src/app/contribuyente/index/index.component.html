@@ -1,0 +1,28 @@
+
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">RNC/CEDULA</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Estatus</th>
+        <th scope="col">Acciones</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contribuyente of contribuyentes">
+        <td>{{ contribuyente.rncCedula }}</td>
+        <td>{{ contribuyente.nombre }}</td>
+        <td>{{ contribuyente.tipo }}</td>
+        <td>{{ contribuyente.estatus }}</td>
+        <td>
+          <a href="#" [routerLink]="['/contribuyente/', contribuyente.rncCedula, 'edit']" class="btn btn-primary">Ver comprobante fiscal</a>
+        </td>
+
+      </tr>
+
+    </tbody>
+  </table>
